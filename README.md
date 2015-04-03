@@ -8,7 +8,7 @@ Problems I ran into:
   Connecting the PS3 controller to the RPi -- Solved
   Connecting the MYO to the RPi -- Solved
   Calibrating ESC's --Solved
-  Using the MYO inputs -- Not Solved Yet
+  Using the MYO inputs -- Not Solved Yet 
   
   To start, you must have NOOBS, or some OS installed on the RPi, this can be easily done if you visit their website. Basically, download the OS onto a formatted microSD card and plug it into the Pi and then power it up. To sign in for the first time, the username is "pi" and the password is "raspberry".
   
