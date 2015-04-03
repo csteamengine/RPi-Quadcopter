@@ -41,22 +41,32 @@ If no controller is connected, a message will pop up saying "No controller found
     $sudo mkdir -p /var/lib/sixad/profiles
     $sudo checkinstall
 
-Once that is done run the following to run controller manager at boot.
+Once that is done run the following to run controller manager at boot. Now when you reboot the Pi, sixad will automatically run.
 
     $sudo update-rc.d sixad defaults
 
-Finally, to connect the controller, enter this command:
+Finally, unplug the controller and reboot the system.
 
-    $sudo sixad --start
+		$sudo reboot
 
-If it says that sixad is already running, type:
+Once it is up and running again, sixad will alread be running so all you have to do is press the PS button. If it does not connect or doesnt recognise it, first try restarting sixad.
 
     $sudo sixad --stop
     $sudo sixad --start
-
+    
 At this point it will prompt you to press the PS button. When you do so it will display this if it connected successfully.
+This will be displayed on the screen.
 
-sixad-bin[2535]: started
-sixad-bin[2535]: sixad started, press the PS button now
+		sixad-bin[2535]: started
+		sixad-bin[2535]: sixad started, press the PS button now
+		sixad-bin[2535]: unable to connect to sdp session
+		sixad-bin[2535]: Connected Sony Computer Entertainment Wireless Controller
+
+If it still wont connect then try plugging the controller in again and running 
+		$sudo ./sixpair
+
+
+
+
 
   
