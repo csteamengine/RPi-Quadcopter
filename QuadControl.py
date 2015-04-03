@@ -35,7 +35,7 @@ FrontMotor.start(hover)
 RightMotor.start(hover)
 LeftMotor.start(hover)
 
-#Preps the motors to receive duty cycle changes. Start at 0 DC  
+#Preps the motors to receive duty cycle changes. Start at 0 D.C.  
 #Calibrates the ESC     
 for i in range(0,3):
        RightMotor.ChangeDutyCycle(i)
@@ -52,8 +52,8 @@ FrontMotor.ChangeDutyCycle(0)
 TiltAmount = 1
 ThrustAmount = 3
 #lowest functioning duty cycle is 3 so dont want to go below that.
-#remember to change to hover - 3
-DownThrust = 3
+#remember to change to hover - 3 --Since our current hover is 6 
+DownThrust = 3       #--Since our current hover is 6 
 
 
 
@@ -82,7 +82,7 @@ while done==False:
 
        #Heres the fun part
        #I made it so each motor has its own Equation.
-       #Right Motor Amount etc...
+       #Right Motor Amount which is a collection of different variables.
        #----
        #thrust
        #tilt
