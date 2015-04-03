@@ -65,6 +65,11 @@ This will be displayed on the screen.
 If it still wont connect then try plugging the controller in again and running.
 		$sudo ./sixpair
 
+Each time you start the pi, you simply have to press the PS button on the controller to connect it, as long as you ran the update -rc command above. However if you want to connect a second controller on boot up, just type 
+		$sixad --stop
+		$sixad --start
+Then press the PS button on the second controller.
+
 
 
 
