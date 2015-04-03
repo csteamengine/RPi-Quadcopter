@@ -62,7 +62,7 @@ This will be displayed on the screen.
 		sixad-bin[2535]: unable to connect to sdp session
 		sixad-bin[2535]: Connected Sony Computer Entertainment Wireless Controller
 
-If it still wont connect then try plugging the controller in again and running 
+If it still wont connect then try plugging the controller in again and running.
 		$sudo ./sixpair
 
 
