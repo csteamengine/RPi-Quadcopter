@@ -79,7 +79,11 @@ Then press the PS button on the second controller.
 # PWM
 The motors are controlled by what is called pulse width modulation. Basically, there is the frequency and the duty cycle. Frequency is the amount of loops per second. The duty cycle is the percentage of time that the motor gets the on signal. So if you have a duty cycle of 50%, the motor will be on for half the loop and off for the other half.
 
-With that explained, it is fairly easy to understand. I practiced the PWM with LED's and tacked down the code by using the controller to perfect it. I hooked up 4 LED's (one for each motor) and went from there. I ran into trouble when I connected the motors. The LED's could be programmed with a duty cycle from 0 to 100. However when I hooked the motors up, the Code didn't work. This had me puzzled for a whhile, so I wrote out the PWM_Motor_Range script. Essentially this script maps out the motors duty cycle range by plugging numbers in from 0 to 20. I found that my motors wouldnt start until the duty cycle was around 3, and it would cut off at anything above 13. Although this range seems small, this is plenty of room to work with. I simply rewrote the QuadCode
+With that explained, it is fairly easy to understand. I practiced the PWM with LED's and tacked down the code by using the controller to perfect it. I hooked up 4 LED's (one for each motor) and went from there. I ran into trouble when I connected the motors. The LED's could be programmed with a duty cycle from 0 to 100. However when I hooked the motors up, the code didn't work. This had me puzzled for a while, so I wrote out the PWM_Motor_Range script. 
+
+Essentially this script maps out the motors duty cycle range by plugging numbers in from 0 to 20. I found that my motors wouldnt start until the duty cycle was around 3, and it would cut off at anything above 13. Although this range seems small, this is plenty of room to work with. I simply rewrote the QuadControl to a scale more suitable. After doing this, the motors seemed to work well. 
+
+From here I went on to build the copter out of K'NEX. It has a octagonal central tower that is two platforms high. From there it has 4 arms with reinforcment truss's underneath. All of this is resting on 8 landing gear each extending from a side of the arms. 
 
 
 
