@@ -97,8 +97,7 @@ Essentially this script maps out the motors duty cycle range by plugging numbers
 
 From here I went on to build the copter out of K'NEX. It has a octagonal central tower that is two platforms high. From there it has 4 arms with reinforcment truss's underneath. All of this is resting on 8 landing gear each extending from a side of the arms. I strapped the Pi onto the top, the Myo inbetween the two platfroms, and the batteries on a small shelf like roof above the Pi. From there I had the ESC's tied midway down the arms and the motors obviously on the end of each arm.
 
-
-
+Of course your copter will weight slightly different then mine so you may have to adjust the PWM percentages to be able to lift the craft correctly.
 
 
   
