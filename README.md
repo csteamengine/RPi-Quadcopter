@@ -13,7 +13,8 @@ Problems I ran into:
   
   To start, you must have NOOBS, or some OS installed on the RPi, this can be easily done if you visit their website. Basically, download the OS onto a formatted microSD card and plug it into the Pi and then power it up. To sign in for the first time, the username is "pi" and the password is "raspberry".
   
--------PS3 CONTROLLER-------
+# PS3 CONTROLLER
+
 The $ denotes the beginning of a line of code. 
 First make sure your Pi is up to date (This may take a while depending on your pi):
 	
@@ -74,6 +75,11 @@ Each time you start the pi, you simply have to press the PS button on the contro
 		$sixad --stop
 		$sixad --start
 Then press the PS button on the second controller.
+
+# PWM
+The motors are controlled by what is called pulse width modulation. Basically, there is the frequency and the duty cycle. Frequency is the amount of loops per second. The duty cycle is the percentage of time that the motor gets the on signal. So if you have a duty cycle of 50%, the motor will be on for half the loop and off for the other half.
+
+With that explained, it is fairly easy to understand. I practiced the PWM with LED's and tacked down the code by using the controller to perfect it. I hooked up 4 LED's (one for each motor) and went from there. I ran into trouble when I connected the motors. The LED's could be programmed with a duty cycle from 0 to 100. However when I hooked the motors up, the Code didn't work. This had me puzzled for a whhile, so I wrote out 
 
 
 
