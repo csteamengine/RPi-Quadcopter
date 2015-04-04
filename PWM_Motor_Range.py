@@ -1,4 +1,6 @@
-
+#This file is just to map out your motors range.
+#If your motors are like mine, they wont have the same duty cycle range as an led.
+#I had to figure out the minimum and maximum Duty Cycle that my motors could operate at.
 import time
 import RPi.GPIO as GPIO
 
@@ -21,7 +23,7 @@ while done == False:
         if event.type == pygame.QUIT:
             done = True
         
-    
+    #may need to change the range of i in this. My motors never made it up to 20 DC so 
     for i in range(0,20):
         p.ChangeDutyCycle(i)
         time.sleep()
