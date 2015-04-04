@@ -5,10 +5,11 @@ A Quadcopter controlled by a Raspberry Pi and a PS3 controller
   As I get better at programming, I will return and update my code and perhaps (hopefully) improve it. For now, here is a description of what to do and how to do it.
 
 Problems I ran into: 
+
 		--Connecting the PS3 controller to the RPi -- Solved
-  	--Connecting the MYO to the RPi -- Solved
-  	--Calibrating ESC's --Solved
-	 	--Using the MYO inputs -- Not Solved Yet 
+		--Connecting the MYO to the RPi -- Solved
+		--Calibrating ESC's --Solved
+		--Using the MYO inputs -- Not Solved Yet 
   
   To start, you must have NOOBS, or some OS installed on the RPi, this can be easily done if you visit their website. Basically, download the OS onto a formatted microSD card and plug it into the Pi and then power it up. To sign in for the first time, the username is "pi" and the password is "raspberry".
   
@@ -47,7 +48,7 @@ If no controller is connected, a message will pop up saying "No controller found
 
 Once that is done, run the following to allow the controller mangager to run at boot. Now when you reboot the Pi, sixad will automatically run.
 
-    $sudo update-rc.d sixad defaults
+		$sudo update-rc.d sixad defaults
 
 Finally, unplug the controller and reboot the system.
 
