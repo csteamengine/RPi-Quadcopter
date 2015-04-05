@@ -35,10 +35,10 @@ First make sure your Pi is up to date (This may take a while depending on your p
 Next install the bluetooth support (Drivers, compilers and such) this one will take a long time so get comfortable:   
    $ denotes a new line. this first one is a long line.
    
-    $sudo apt-get install bluez-utils bluez-compat bluez-hcidump checkinstall libusb-dev 
-      libbluetooth-dev joystick
-      Make sure to run the above command as a single line.
-      Once this is done you will need to download and compile the controller utility:
+    $sudo apt-get install bluez-utils bluez-compat bluez-hcidump checkinstall libusb-dev libbluetooth-dev joystick
+      
+Once this is done you will need to download and compile the controller utility:
+
     $wget http://www.pabr.org/sixlinux/sixpair.c
     $gcc -o sixpair sixpair.c -lusb
 
