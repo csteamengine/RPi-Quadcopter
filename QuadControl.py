@@ -37,7 +37,7 @@ LeftMotor.start(hover)
 
 #Preps the motors to receive duty cycle changes. Start at 0 D.C.  
 #Calibrates the ESC     
-for i in range(0,3):
+for i in range(0,6):
        RightMotor.ChangeDutyCycle(i)
        BackMotor.ChangeDutyCycle(i)
        LeftMotor.ChangeDutyCycle(i)
@@ -50,10 +50,10 @@ BackMotor.ChangeDutyCycle(0)
 FrontMotor.ChangeDutyCycle(0)
 
 TiltAmount = 1
-ThrustAmount = 3
+ThrustAmount = 2
 #lowest functioning duty cycle is 3 so dont want to go below that.
 #remember to change to hover - 3 --Since our current hover is 6 
-DownThrust = 3       #--Since our current hover is 6 
+DownThrust = 1       #--Since our current hover is 6 
 
 
 
@@ -212,10 +212,10 @@ while done==False:
        if Start == 1:
                    StartEngines = True
                    hover = 6
-       if Up == 1 :
-                   hover = hover + 1
-       if Down == 1 :
-                   hover = hover - 1
+       if Up == 1 and hover < 9:
+                   hover = hover + .1
+       if Down == 1 and hover > 5:
+                   hover = hover - .1
        if Xbut == 1 and AutoPilot == False:
                hover = 6
        # Limit to 50 frames per second
