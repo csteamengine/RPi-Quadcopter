@@ -47,6 +47,7 @@ Next connect the PS3 controller to the Pi using the USB cable and type the follo
     $sudo ./sixpair
 
 If this is successful, it will return something like this:
+
 		Current Bluetooth master: 00:10:60:57:15:C7
  		Setting master bd_addr to: 00:10:60:57:15:C7 
 
