@@ -27,14 +27,14 @@ Problems I ran into:
   
 # PS3 CONTROLLER
 
-The $ denotes the beginning of a line of code. 
+The $ denotes the beginning of a line of code to be entered in the Terminal. 
 First make sure your Pi is up to date (This may take a while depending on your pi):
 	
 		$sudo apt-get update
 
 Next install the bluetooth support (Drivers, compilers and such) this one will take a long time so get comfortable:   
+   $ denotes a new line. this first one is a long line.
    
-    $ denotes a new line. this first one is a long line.
     $sudo apt-get install bluez-utils bluez-compat bluez-hcidump checkinstall libusb-dev 
       libbluetooth-dev joystick
       Make sure to run the above command as a single line.
@@ -82,9 +82,10 @@ This will be displayed on the screen.
 		sixad-bin[2535]: Connected Sony Computer Entertainment Wireless Controller
 
 If it still wont connect then try plugging the controller in again and running.
+
 		$sudo ./sixpair
 
-Each time you start the pi, you simply have to press the PS button on the controller to connect it, as long as you ran the update -rc command above. However if you want to connect a second controller on boot up, just type 
+Each time you start the pi, you simply have to press the PS button on the controller to connect it, as long as you ran the update -rc command above. However if you want to connect a second controller on boot up, in the terminal just type 
 		$sixad --stop
 		$sixad --start
 Then press the PS button on the second controller.
