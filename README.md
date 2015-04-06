@@ -42,5 +42,25 @@ Of course your copter will weight slightly different then mine so you may have t
 # Build
 The ESC's and motors I bought didn't come with bullet connectors on so I soldered some on and put some heat shrink wrap on them to clean them up. To build the frame, I threw some K'NEX together and modified it as I went. I put two full platforms on and another half platform stacked above the other two. These allowed me the room to store the computer, the batteries, and the gyro. Since it was K'NEX, it is fairly strong and at the same time incredibly light. I bolted a wood square to the ends of the arms, and screwed the motors onto there. I just used velcro straps and zip ties to secure everything down and plugged everything in.
 
+# Controls
+I designed the controls for this to be as simple but fun as possible. That is why I chose the PS3 controller, it has has so many buttons that are all easy to program with. Here is how I programmed the controls. 
+
+Start ---- starts motors
+PS button ----autopilot
+Select ---- autopilot off
+
+Up/Down
+        Right joystick up and down
+Forward backward side to side
+        Left joystick in the direction you want to tilt
+Yaw
+        Right joystick left and right
+Increase hover 
+        Dpad up
+Decrease hover 
+        Dpad down
+X ----- reset hover
+L1 R1 L2 and R2
+        Ends program 
 
   
