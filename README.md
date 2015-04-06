@@ -46,21 +46,32 @@ The ESC's and motors I bought didn't come with bullet connectors on so I soldere
 I designed the controls for this to be as simple but fun as possible. That is why I chose the PS3 controller, it has has so many buttons that are all easy to program with. Here is how I programmed the controls. 
 
 Start ---- starts motors
+
 PS button ----autopilot
+
 Select ---- autopilot off
 
 Up/Down
-        Right joystick up and down
+		Right joystick up and down
+		
 Forward backward side to side
-        Left joystick in the direction you want to tilt
+    Left joystick in the direction you want to tilt
+    
 Yaw
-        Right joystick left and right
+    Right joystick left and right
+    
 Increase hover 
-        Dpad up
+
+    Dpad up
+    
 Decrease hover 
-        Dpad down
+
+    Dpad down
+    
 X ----- reset hover
+
 L1 R1 L2 and R2
-        Ends program 
+
+    Ends program 
 
   
