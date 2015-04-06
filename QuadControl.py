@@ -37,7 +37,7 @@ LeftMotor.start(hover)
 
 #Preps the motors to receive duty cycle changes. Start at 0 D.C.  
 #Calibrates the ESC     
-for i in range(0,6):
+for i in range(5,7):
        RightMotor.ChangeDutyCycle(i)
        BackMotor.ChangeDutyCycle(i)
        LeftMotor.ChangeDutyCycle(i)
