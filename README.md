@@ -26,7 +26,7 @@ Problems I ran into:
   To start, you must have NOOBS, or some OS installed on the RPi, this can be easily done if you visit their website. Basically, download the OS onto a formatted microSD card and plug it into the Pi and then power it up. To sign in for the first time, the username is "pi" and the password is "raspberry".
   
 # PS3 CONTROLLER
-
+The PS3 Controller is fairly easy to set up. Basically the commands download executable file sixpair that allows your Pi to recognize the bluetooth address of the controller. Once the file is installed, it is really plug and play. I have found it incredibly easy to get the controller up and running. First, download and compile the files, then plug in the PS3 controller via usb. Then, simply run sudo ./sixpair, then sixad --start and the controller is good to go.
 
 # PWM
 The motors are controlled by what is called pulse width modulation. Basically, there is the frequency and the duty cycle. Frequency is the amount of loops per second. The duty cycle is the percentage of time that the motor gets the on signal. So if you have a duty cycle of 50%, the motor will be on for half the loop and off for the other half.
@@ -38,6 +38,9 @@ Essentially this script maps out the motors duty cycle range by plugging numbers
 From here I went on to build the copter out of K'NEX. It has a octagonal central tower that is two platforms high. From there it has 4 arms with reinforcment truss's underneath. All of this is resting on 8 landing gear each extending from a side of the arms. I strapped the Pi onto the top, the Myo inbetween the two platfroms, and the batteries on a small shelf like roof above the Pi. From there I had the ESC's tied midway down the arms and the motors obviously on the end of each arm.
 
 Of course your copter will weight slightly different then mine so you may have to adjust the PWM percentages to be able to lift the craft correctly.
+
+# Build
+The ESC's and motors I bought didn't come with bullet connectors on so I soldered some on and put some heat shrink wrap on them to clean them up. To build the frame, I threw some K'NEX together and modified it as I went. I put two full platforms on and another half platform stacked above the other two. These allowed me the room to store the computer, the batteries, and the gyro. Since it was K'NEX, it is fairly strong and at the same time incredibly light. I bolted a wood square to the ends of the arms, and screwed the motors onto there. I just used velcro straps and zip ties to secure everything down and plugged everything in.
 
 
   
