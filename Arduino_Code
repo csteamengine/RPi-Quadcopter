@@ -1,0 +1,137 @@
+
+#include <Servo.h>
+
+
+Servo motor1;
+
+Servo motor2;
+
+Servo motor3;
+
+Servo motor4;
+
+
+int fan1 = 9;
+
+int fan2 = 10;
+
+int fan3 = 11;
+
+int fan4 = 6;
+
+
+int thrust1 = 700;
+
+int thrust2 = 700;
+
+int thrust3 = 700;
+
+int thrust4 = 700;
+
+
+int hover = 1000;
+
+
+void setup()
+
+{
+
+  Serial.begin(9600);
+
+  motor1.attach(fan1);
+
+  motor2.attach(fan2);
+
+  motor3.attach(fan3);
+
+  motor4.attach(fan4);
+
+  
+
+  motor1.writeMicroseconds(2000);
+
+  motor2.writeMicroseconds(2000);
+
+  motor3.writeMicroseconds(2000);
+
+  motor4.writeMicroseconds(2000);
+
+  
+
+  delay(5000);
+
+  
+
+  motor1.writeMicroseconds(700);
+
+  motor2.writeMicroseconds(700);
+
+  motor3.writeMicroseconds(700);
+
+  motor4.writeMicroseconds(700);
+
+  
+
+  delay(2000);
+
+}
+
+
+void loop()
+
+{ 
+
+  if (Serial.available() > 0)
+
+  {
+
+    thrust1 = Serial.parseInt();
+
+    thrust2 = Serial.parseInt();
+
+    thrust3 = Serial.parseInt();
+
+    thrust4 = Serial.parseInt();
+
+      
+
+    if (thrust1 >= 700 && thrust1 <= 2000)
+
+    {
+
+      motor1.writeMicroseconds(thrust1);
+
+    }
+
+    if (thrust2 >= 700 && thrust2 <= 2000)
+
+    {
+
+      motor2.writeMicroseconds(thrust2);
+
+    }
+
+    if (thrust3 >= 700 && thrust3 <= 2000)
+
+    {
+
+      motor3.writeMicroseconds(thrust3);
+
+    }
+
+    if (thrust4 >= 700 && thrust4 <= 2000)
+
+    {
+
+      motor4.writeMicroseconds(thrust4);
+
+    }
+
+
+    delay(30);
+
+  }
+
+}
+
+
