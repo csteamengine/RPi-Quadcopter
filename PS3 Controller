@@ -2,9 +2,9 @@
 
 The $ denotes the beginning of a line of code to be entered in the Terminal. 
 First make sure your Pi is up to date (This may take a while depending on your pi):
-	
+	'''
 	$sudo apt-get update
-
+	'''
 Then make install the bluetooth dongle support. This is different for each dongle so I will let you do that part.
 There are tutorials all over the place explaining what to do.
 
